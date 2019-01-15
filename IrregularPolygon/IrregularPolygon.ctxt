@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=IrregularPolygon()
+comment1.params=vertices
+comment1.target=IrregularPolygon(java.util.ArrayList)
+comment2.params=x\ y
+comment2.target=void\ add(double,\ double)
+comment3.params=pos1\ pos2
+comment3.target=double\ dist(int,\ int)
+comment4.params=
+comment4.target=void\ sort()
+comment5.params=
+comment5.target=double\ perimeter()
+numComments=6
