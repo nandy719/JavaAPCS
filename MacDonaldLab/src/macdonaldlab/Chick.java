@@ -9,17 +9,30 @@ package macdonaldlab;
  *
  * @author nandy
  */
-public class Chick implements Animal
+public class Chick extends Animal
 {
   private String myType;
   private String mySound;
   private boolean twoSounds;
   public Chick(){
+      super();
       myType = "Chicken";
       mySound = "cheep";
       twoSounds = false;
   }
   public Chick(boolean makesTwoSounds){
+      myType = "Chicken";
+      mySound = "cheep";
+      twoSounds = makesTwoSounds;
+  }
+  public Chick(String farmer){
+      super(farmer);
+            myType = "Chicken";
+            mySound = "cheep";
+            twoSounds = false;
+  }
+  public Chick(String farmer, boolean makesTwoSounds){
+      super(farmer);
       myType = "Chicken";
       mySound = "cheep";
       twoSounds = makesTwoSounds;

@@ -17,9 +17,9 @@ public class Farm
    {
       myFarm = new Animal [4];
       myFarm[0] = new Cow();
-      myFarm[1] = new Chick();
-      myFarm[2] = new Pig();
-      myFarm[3] = new NamedCow("Elsie");
+      myFarm[1] = new Chick("daddy");
+      myFarm[2] = new Pig("Oinkman");
+      myFarm[3] = new NamedCow("Elsie", "My Butt");
    }
 
    public void animalSounds()
@@ -28,7 +28,7 @@ public class Farm
       for(int i = 0; i < myFarm.length; i++)
       {
          temp = myFarm[i];
-         System.out.println(temp.getType() + " goes " + temp.getSound());
+         System.out.println(temp.getType() + " goes " + temp.getSound() + " and is farmed by: " + temp.getFarmer());
       }
 
       Chick tweety = new Chick(true);

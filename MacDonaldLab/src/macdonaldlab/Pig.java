@@ -9,11 +9,17 @@ package macdonaldlab;
  *
  * @author nandy
  */
-public class Pig implements Animal
+public class Pig extends Animal
 {
   private String myType;
   private String mySound;
   public Pig(){
+      super();
+      myType = "pig";
+      mySound = "oink";
+  }
+  public Pig(String farmer){
+      super(farmer);
       myType = "pig";
       mySound = "oink";
   }

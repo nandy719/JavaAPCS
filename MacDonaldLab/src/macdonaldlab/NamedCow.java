@@ -15,6 +15,10 @@ public class NamedCow extends Cow {
         super();
         name = aName;
     }
+    public NamedCow(String aName, String farmer){
+        super(farmer);
+        name = aName;
+    }
     public String getName(){
         return name;
     }
